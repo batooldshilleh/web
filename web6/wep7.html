@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        p{
+            border: red 1px solid;
+        }
+        p.testw{
+            width: 200px;
+        }
+        p.testwh{
+            width: 200px;
+            height: 50px;
+        }
+        p.testwho{
+            width: 200px;
+            height: 50px;
+            overflow: hidden;
+        }
+        p.testwhos{
+            width: 200px;
+            height: 50px;
+            overflow: scroll;
+        }
+        p.per{
+            border: red  solid; width: 200px;
+            height: 50%;
+            overflow: scroll;
+        }
+        p.tlr{
+            top:20px;
+            right: 30px;
+        }
+        p.tlreletev{
+            top:20px;
+            right: 30px;
+            position: relative;/*ما تغيرت العناصر المحيطه و الاريا اللي كانت محجوزة اله ظلت محجوزة و الاورجين نقطة  الاصل مكان ما كان مرسوم سابقا*/
+        }
+        p.tlrapps{
+            top:20px;
+            right: 30px;
+            position: absolute;/*نقطة الاصل راس الصففحة ، الايليمنتز ترتبت ، و الحيز المحجوز اله راح */
+        }
+        p.tlrfix{
+            top:20px;
+            right: 30px;
+            position: fixed;/*العنصر اللي معموله فيكسد الاورجن تبعه الويندوز و طول ما بعمل السكرول بظل ظاهر*/
+        }
+        p.pand{
+            padding: 20px;
+            width: 50%;
+        }
+        p.pandv{
+            padding-left: 20px;
+            width: 50%;
+            padding-right: 80px;
+            padding-top:60px;
+        }
+        p.pands{
+            padding: 20px 0px 80px 40px;/*top right  button left*/
+            width: 50%;
+        }
+        p.pandmarg{
+            padding: 20px 0px 80px 40px;/*top right left button*/
+            width: 50%;
+            margin: 60px;
+        }
+        div.divc{
+            float: left;
+        }
+        div.ov{
+            position: relative;
+            top:30px;
+            left: 50px;
+            z-index: 5;/*هيك بصيرو فوق بعض */
+        }
+        div.ov2{
+            position: relative;
+            top:30px;
+            left: 50px;
+            z-index: 200;/*هيك بصيرو فوق بعض */
+        }
+    </style>
+</head>
+<!--لبلوك لحاله ، الان لاين بترتبو جنب بعض-->
+<!--لاي ام العرض تبع الكابيتال ام ، الاي اكي الهاي تبع السمول اكس -->
+<body>
+<div class="divc">
+    <img src="WhatsApp Image 2022-06-19 at 11.42.26 AM.jpeg" width="400px">
+</div>
+<h1>the start</h1>
+             <p class="testwhos" >
+                 1ppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+                 pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+                 pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+             </p>
+             <p class="testw">
+                 2ppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+                 pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+                 pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+             </p>
+             <p class="testwh">
+                 3ppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+                 pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+                 pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+             </p>
+             <p class="testwho">
+                 4ppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+                 pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+                 pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+             </p>
+             <p >
+                 5ppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+                 pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+                 pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+             </p>
+             <p class="per"><!--لكونتينر البدي-->
+                 6ppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+                 pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+                 pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+             </p>
+             <div style="height: 60%"><!--هون الكونتينر تغير مش البدي-->
+             <p >
+                 7ppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+                 pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+                 pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+             </p>
+             </div>
+<!--أحنا حطينا البوردر بس عشان نفهم لو شلنا كل اشي بظل صح ، في ب سي اس اس البوكس موديل اللي بيظهر في المتصفح و بيتكون من الكونتنت الباندينج البوردر ة المارجينج -->
+             <p class="tlr" >
+                 8ppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+                 pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+                 pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+             </p><!--هون بتغيرش شي -->
+             <p class="tlreletev">
+                 9ppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+                 pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+                 pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+             </p>
+             <p class="tlrfix">
+                 10ppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+                 pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+                 pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+             </p>
+             <p class="pand">
+                 11ppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+                 pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+                 pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+             </p>
+             <p class="pands" >
+                 12ppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+                 pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+                 pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+             </p>
+             <p class="pandmarg">
+                 13ppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+                 pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+                 pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+             </p>
+             <p class="tlrapps">
+                 14ppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+                 pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+                 pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+             </p>
+<!--الباندج المسافة بين الكونتانت و البوردر ، المارج بين الكونتنت والعالم الخارجي-->
+<!--ما اعمل مارجن وبعدها اغير البوزيشين بحتفظ بكل اشي -->
+             <!--الفلوت ما بشتغل مع الابسليوت او الفكس -->
+             <p >
+                 14ppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+                 pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+                 pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+             </p>
+             <div class="divc">
+                 <img src="WhatsApp Image 2022-06-19 at 11.42.26 AM.jpeg" width="400px">
+             </div>
+             <p >
+                 14ppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+                 pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+                 pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+             </p>
+<div class="divc">
+    <img src="WhatsApp Image 2022-06-19 at 11.42.26 AM.jpeg" width="400px">
+</div>
+<div class="divc">
+    <img src="WhatsApp Image 2022-06-19 at 11.42.26 AM.jpeg" width="400px">
+</div>
+<div class="ov">
+    <img src="30119418.jpg" width="400px">
+</div>
+<div class="ov">
+    <img src="WhatsApp Image 2022-06-19 at 11.42.26 AM.jpeg" width="400px">
+</div>
+<!--لما يكزن في مساحة لثنتين يترتبو جنب بعض بترتبو و باقي المساحة للكونتنت-->
+<!--و في الفلوت ما في رايت ولفت سكرول -->
+<div class="divc">
+    <img src="WhatsApp Image 2022-06-19 at 11.42.26 AM.jpeg" width="400px">
+</div>
+             <p >
+                 14ppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+                 pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+                 pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+             </p>
+<div class="ov2">
+    <img src="30119418.jpg" width="400px">
+</div>
+<div style="t">
+<img src="WhatsApp Image 2022-06-19 at 11.42.26 AM.jpeg" width="400px">
+</div>
+</body>
+</html>
